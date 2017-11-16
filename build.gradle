@@ -1,0 +1,16 @@
+group 'com.katzstudio'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile 'org.apache.storm:storm-core:1.1.1'
+    compile 'com.yahoofinance-api:YahooFinanceAPI:3.5.0'
+}
