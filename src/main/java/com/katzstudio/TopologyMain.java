@@ -12,7 +12,7 @@ public class TopologyMain {
         builder.setBolt("Yahoo-Finance-Bolt", new yfBolt())
             .shuffleGrouping("Yahoo-Finance-Spout");
         builder.setBolt("Yahoo-Finance-Bolt2", new yfBolt2())
-                .shuffleGrouping("Yahoo-Finance-Bolt");
+                .shuffleGrouping("Yahoo-Finance-Bolt");  
 
 
         StormTopology topology = builder.createTopology();
